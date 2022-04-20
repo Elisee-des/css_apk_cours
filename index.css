@@ -9,7 +9,7 @@ body {
     font-family: "font-1", serif;
     background: url(./sunset-1651426_1920.jpg) center/cover;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -32,12 +32,17 @@ main {
     border-radius: 15px;
     box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.26);
 }
-
-.positioning {
+/******************* Positioning ************************/
+.positioning,
+.flexbox,
+.grid {
     border: 2px solid skyblue;
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
+}
+
+.positioning {
     position: relative;
 }
 
@@ -67,3 +72,43 @@ h2 {
     left: 50%;
     transform: translateX(-50%);
 }
+
+/******************* Flexbox ************************/
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    font-size: 0.7rem;
+    height: 160px;
+    width: 160px;
+    background: turquoise;
+    /****Pour center verticalement***/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ***Gird****
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "i1 i2"
+        "ta ta"
+        "bt bt"
+    ;
+}
+ */
