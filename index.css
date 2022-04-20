@@ -1,0 +1,64 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+
+@font-face {
+    font-family: "font-1";
+    src: url(./NotoSans-MediumItalic.ttf);
+}
+
+body {
+    font-family: "font-1", serif;
+    background: url(./sunset-1651426_1920.jpg) center/cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: rgb(199, 199, 250);
+    text-shadow: 3px 0px 0 #a9afafb7;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+}
+
+main {
+    background: whitesmoke;
+    width: 90%;
+    min-height: 500px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.26);
+}
+
+.positioning {
+    border: 2px solid skyblue;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+h2 {
+    margin: 0;
+}
+
+#circle {
+    height: 60px;
+    width: 60px;
+    background: skyblue;
+    padding: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 110px;
+    top: -12px;
+    box-shadow: 0 2px 12px 5px rgba(35, 9, 9, 0.11);
+} */
+
+/* #rectangle {
+    height: 15px;
+    width: 100px;
+    background: slateblue;
+} */
