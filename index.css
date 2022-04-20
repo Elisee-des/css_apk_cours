@@ -93,7 +93,7 @@ li {
     justify-content: center;
 }
 
-/* ***Gird****
+/* ***Gird**** */
 
 .grid-container {
     display: grid;
@@ -111,4 +111,40 @@ form {
         "bt bt"
     ;
 }
- */
+
+input,
+ textarea {
+margin: 5px;
+height: 45px;
+border: 1px solid darkblue;
+padding: 10px;
+border-radius: 5px;
+font-size: 1.1rem;
+font-family: "font-1";
+}
+
+#firstname {
+    grid-area: i1;
+}
+
+#surname {
+    grid-area: i2;
+}
+
+textarea {
+    grid-area: ta;
+    resize: none;
+}
+
+input[type="submit"] {
+    grid-area: bt;
+    cursor: pointer;
+    background: cyan;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+ background: darkblue;
+ color: white;
+}
+
