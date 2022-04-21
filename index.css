@@ -101,6 +101,10 @@ li {
     padding: 20px;
 }
 
+.img {
+    text-align: center;
+}
+
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -148,3 +152,22 @@ input[type="submit"]:hover {
  color: white;
 }
 
+/******************* Responsiviter *********************/
+@media screen and (max-width: 1000px) {
+    .grid-container {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "i1"
+            "i2"
+            "ta"
+            "bt"
+        ;
+    }
+}
