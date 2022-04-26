@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+
+@font-face {
+    font-family: "font-1";
+    src: url(./NotoSans-MediumItalic.ttf);
+}
+
+body {
+    font-size: "font-1";
+    background: url(./320439.jpg) center/cover;
+    height: 150vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-shadow: 12px 2px 5px rgb(233, 205, 48);
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 70px;
+    color: antiquewhite;
+}
+
+main {
+    background: rgb(221, 127, 3);
+    margin: 0 60px;
+    height: 110vh;
+    box-shadow: 0 0px 10px 2px rgb(240, 216, 216);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.positionning,
+.flexbox,
+.gird-container {
+    border: 2px solid beige;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 20px;
+    
+}
+
+.positionning {
+    position: relative;
+}
+
+span {
+    padding: 0 10px;
+}
+
+.absolut {
+    position: absolute;
+    background: rgb(34, 207, 28);
+    padding: 20px;
+    right: 0;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    border: 2px solid white;
+}
+
+.absolut2 {
+    background: rebeccapurple;
+    padding: 20px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: calc(50%);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.flexbox {
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+ul {
+    text-align: center;
+    resize: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    justify-content: space-around;
+}
+
+li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 255, 0.253);
+    height: 160px;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.gird-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+}
+
+img {
+    height: 200px;
+}
+
+.img  {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "i1 i2"
+        "ta ta"
+        "bt bt"    
+    ;
+}
+
+input, textarea {
+    height: 45px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+#a {
+    grid-area: i1;
+}
+
+#b {
+    grid-area: i2;
+}
+
+textarea {
+    grid-area: ta;
+    resize: none;
+}
+
+input[type="submit"] {
+    grid-area: bt;
+    cursor: pointer;
+    background: rgb(0, 217, 255);
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background: blue;
+}
